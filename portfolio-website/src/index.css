@@ -771,18 +771,20 @@ html, body {
   }
 
   * {
-    max-width: 100% !important;
     box-sizing: border-box !important;
     overflow-wrap: break-word !important;
     word-wrap: break-word !important;
   }
 
-  h1, h2, h3, h4, p, a, span {
-    white-space: normal !important;
+  /* Specific elements that should be capped */
+  img, p, h1, h2, h3, h4, .btn, .contact-card {
+    max-width: 100% !important;
   }
 
   .integrations-track {
     animation-duration: 25s !important;
+    max-width: none !important;
+    width: max-content !important;
   }
 
   .education-logo-wrapper {

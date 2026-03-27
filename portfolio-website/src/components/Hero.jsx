@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="hero-btns-wrapper">
           <a href="#projects" className="btn btn-primary">View My Work</a>
           <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary">Book 30-Min Call</a>
-          <a href="/resume.pdf" download className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          <a href="/resume.pdf" download className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
             <FaDownload /> Download Resume
           </a>
         </div>
