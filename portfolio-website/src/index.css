@@ -779,8 +779,14 @@ html, body {
   }
 
   .education-logo-wrapper {
-    flex: 0 0 80px !important;
+    flex: 0 0 60px !important;
     margin: 0 auto 15px !important;
+  }
+
+  .education-logo-wrapper img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain !important;
   }
 
   .contact-card {

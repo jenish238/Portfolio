@@ -3,7 +3,10 @@ import React from 'react';
 const Integrations = () => {
   const tools = [
     { name: 'Gemini AI', icon: 'googlegemini', color: '8E75B2' },
+    { name: 'AWS', localImg: '/aws-logo.svg' },
+    { name: 'Razorpay', icon: 'razorpay', color: '0858C1' },
     { name: 'DocuSign', localImg: '/docusign.png' },
+    { name: 'QuickBooks', icon: 'quickbooks', color: '2CA01C' },
     { name: 'Stripe', icon: 'stripe', color: '008CDD' },
     { name: 'WhatsApp', icon: 'whatsapp', color: '25D366' },
     { name: 'Zapier', icon: 'zapier', color: 'FF4A00' },

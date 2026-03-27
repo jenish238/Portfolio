@@ -96,8 +96,8 @@ const Contact = () => {
 
             <a 
               href="tel:+919081131732" 
-              className="contact-card" 
-              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none' }}
+              className="contact-card fade-in stagger-3" 
+              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', justifyContent: 'center' }}
             >
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(100, 255, 218, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', color: 'var(--primary)', flexShrink: 0 }}>
                 <FaPhoneAlt />
@@ -113,9 +113,22 @@ const Contact = () => {
           <div className="fade-in stagger-4 glass" style={{ flex: '1 1 500px', padding: '40px', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
             
             {status === 'success' ? (
-              <div className="fade-in" style={{ textAlign: 'center', padding: '40px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', height: '100%', justifyContent: 'center', minHeight: '400px' }}>
+              <div className="fade-in is-visible" style={{ 
+                textAlign: 'center', 
+                padding: '40px 20px', 
+                display: 'flex', 
+                flexDirection: 'column', 
+                alignItems: 'center', 
+                gap: '20px', 
+                height: '100%', 
+                justifyContent: 'center', 
+                minHeight: '400px',
+                background: 'rgba(10, 25, 47, 0.9)',
+                borderRadius: '12px',
+                border: '1px solid var(--primary)'
+              }}>
                 <FaCheckCircle style={{ fontSize: '5rem', color: 'var(--primary)', marginBottom: '10px' }} />
-                <h3 style={{ fontSize: '1.8rem', color: 'var(--white)' }}>Thank You!</h3>
+                <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)' }}>Thank You!</h3>
                 <p style={{ color: 'var(--white)', fontSize: '1.1rem', lineHeight: '1.6' }}>
                   Thank you for contacting us. Our developer will get in touch with you soon.
                 </p>
