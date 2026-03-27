@@ -734,9 +734,16 @@ html, body {
   }
 
   /* Force stack flex containers */
+  .hero-content {
+    padding-top: 120px !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
   .contact-wrapper,
   .education-card,
-  .hero-content,
   .achievements-btns {
     flex-direction: column !important;
     text-align: center !important;
@@ -775,7 +782,7 @@ html, body {
   }
 
   .integrations-track {
-    animation-duration: 8s !important;
+    animation-duration: 25s !important;
   }
 
   .education-logo-wrapper {

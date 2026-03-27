@@ -69,7 +69,7 @@ const Contact = () => {
               target="_blank" 
               rel="noreferrer"
               className="contact-card fade-in stagger-3" 
-              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', justifyContent: 'center' }}
+              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none' }}
             >
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(100, 255, 218, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', color: 'var(--primary)', flexShrink: 0 }}>
                 <FaMapMarkerAlt />
@@ -83,7 +83,7 @@ const Contact = () => {
             <a 
               href="mailto:jenishgangani238@gmail.com" 
               className="contact-card fade-in stagger-3" 
-              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', justifyContent: 'center' }}
+              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none' }}
             >
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(100, 255, 218, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', color: 'var(--primary)', flexShrink: 0 }}>
                 <FaEnvelopeOpen />
@@ -97,7 +97,7 @@ const Contact = () => {
             <a 
               href="tel:+919081131732" 
               className="contact-card fade-in stagger-3" 
-              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', justifyContent: 'center' }}
+              style={{ flex: 1, padding: '30px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none' }}
             >
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(100, 255, 218, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', color: 'var(--primary)', flexShrink: 0 }}>
                 <FaPhoneAlt />
