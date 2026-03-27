@@ -20,7 +20,7 @@ const Education = () => {
             maxWidth: '1000px',
             margin: '0 auto'
           }}>
-            <div style={{ flex: '0 0 120px' }}>
+            <div className="education-logo-wrapper" style={{ flex: '0 0 120px' }}>
               <img 
                 src="/assets/education-icon.png" 
                 alt="Education Degree" 

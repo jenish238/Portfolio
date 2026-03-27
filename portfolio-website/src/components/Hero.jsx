@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaSalesforce, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaSalesforce, FaWhatsapp, FaDownload } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 
 const Hero = () => {
@@ -24,6 +24,9 @@ const Hero = () => {
         <div className="hero-btns-wrapper">
           <a href="#projects" className="btn btn-primary">View My Work</a>
           <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary">Book 30-Min Call</a>
+          <a href="/resume.pdf" download className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <FaDownload /> Download Resume
+          </a>
         </div>
         <div style={{ display: 'flex', gap: '25px', justifyContent: 'center' }}>
           <a href="https://www.linkedin.com/in/jenish-gangani-577440215/" target="_blank" rel="noreferrer" style={{ color: 'var(--white)', fontSize: '1.8rem', transition: 'var(--transition)' }} className="social-icon" title="LinkedIn" aria-label="Visit LinkedIn Profile">
