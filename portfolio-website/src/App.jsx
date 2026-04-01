@@ -54,7 +54,7 @@ function App() {
             <p className="fade-in stagger-4">
               I thrive on solving challenging business problems through secure, high-performance integrations 
               and user-centric designs. Whether it's optimizing a massive Salesforce org or building 
-              a custom AI chatbot, I am committed to engineering excellence.
+              a custom AI chatbot, I am committed to engineering excellence..
             </p>
           </div>
         </article>
