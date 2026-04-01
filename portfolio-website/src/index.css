@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-  --bg-dark: #0a192f;
-  --bg-light: #112240;
-  --bg-navy: #020c1b;
+  /* Solid reference values kept as comments for reference */
+  /* --bg-dark-solid: #0a192f; --bg-light-solid: #112240; --bg-navy-solid: #020c1b; */
+
+  /* Semi-transparent backgrounds (88% opaque) so the global particle canvas
+     at z-index:0 remains subtly visible through every section */
+  --bg-dark: rgba(10, 25, 47, 0.88);
+  --bg-light: rgba(17, 34, 64, 0.88);
+  --bg-navy: rgba(2, 12, 27, 0.88);
+
   --primary: #00d4ff;
   --secondary: #0074D9;
   --accent: #64ffda;
   --text-main: #ccd6f6;
   --text-sub: #8892b0;
   --white: #e6f1ff;
-  --glass: rgba(10, 25, 47, 0.7);
+  --glass: rgba(10, 25, 47, 0.65);
   --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -20,12 +26,14 @@
   padding: 0;
 }
 
+/* Solid base so semi-transparent sections/body don't bleed through to white */
 html {
   scroll-behavior: smooth;
+  background-color: #020c1b;
 }
 
 body {
-  background-color: var(--bg-dark);
+  background-color: #0a192f;
   color: var(--text-main);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
@@ -212,7 +220,13 @@ ul {
 }
 
 /* Scroll Animation Triggers */
-.fade-in, .zoom-in, .slide-in-left, .slide-in-right, .flip-in-y, .bounce-in, .blur-in {
+.fade-in,
+.zoom-in,
+.slide-in-left,
+.slide-in-right,
+.flip-in-y,
+.bounce-in,
+.blur-in {
   opacity: 0;
 }
 
@@ -241,6 +255,7 @@ ul {
 }
 
 @keyframes skillBreathing {
+
   0%,
   100% {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -601,7 +616,8 @@ ul {
   margin-bottom: 20px;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -679,7 +695,7 @@ html, body {
     padding: 30px;
     border-bottom: 2px solid var(--primary);
     gap: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     z-index: 1000;
     backdrop-filter: blur(20px);
   }
@@ -741,7 +757,7 @@ html, body {
     justify-content: center !important;
     align-items: center !important;
   }
-  
+
   .contact-wrapper,
   .education-card,
   .achievements-btns {
@@ -777,7 +793,14 @@ html, body {
   }
 
   /* Specific elements that should be capped */
-  img, p, h1, h2, h3, h4, .btn, .contact-card {
+  img,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  .btn,
+  .contact-card {
     max-width: 100% !important;
   }
 
@@ -831,4 +854,18 @@ html, body {
   .hamburger {
     display: flex;
   }
+}
+
+/* ===========================
+   Particle Background Layer
+   =========================== */
+
+/* Ensure every section sits above the fixed canvas at z-index:0 */
+.App>nav,
+.App>header,
+.App>section,
+.App>article,
+.App>footer {
+  position: relative;
+  z-index: 1;
 }
