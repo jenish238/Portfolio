@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://jenishgangani.com/sitemap.xml
+Sitemap: https://jenishgangani.me/sitemap.xml
 
 # Disallow dev/build artifacts
 Disallow: /src/
