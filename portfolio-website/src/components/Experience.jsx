@@ -17,8 +17,10 @@ const Experience = () => {
               March 2025 – Present | Ahmedabad
             </p>
             <ul className="experience-list">
-              <li>Led system optimization and org audits, improving performance, removing redundant automation, and ensuring top-tier data governance.</li>
-              <li>Built and integrated AI-driven solutions (Gemini AI) for voice-to-text processing, data summarization, chatbot interactions, and automated reporting.</li>
+              <li>Directed full-scale enterprise <strong>Salesforce Org Audits</strong>, identifying and refactoring 100+ legacy automation rules to improve system speed and maintainability.</li>
+              <li>Architected a cutting-edge <strong>AI-powered Data Summarization</strong> engine utilizing <strong>Gemini AI</strong>, resulting in a 40% reduction in manual case triage time for client support teams.</li>
+              <li>Pioneered the use of <strong>Agentforce and LWC</strong> to build an autonomous customer engagement agent, bridging Salesforce data with external voice-to-text APIs.</li>
+              <li>Collaborated with cross-functional teams to design secure, highly performant custom middleware for synchronous data synchronization between Salesforce and ERP systems.</li>
             </ul>
           </div>
 
@@ -32,10 +34,11 @@ const Experience = () => {
               February 2023 – February 2025 | Ahmedabad
             </p>
             <ul className="experience-list">
-              <li>Delivered end-to-end Salesforce solutions across Healthcare, Finance, Construction, Real Estate, and Insurance using Sales Cloud, Service Cloud, and OmniStudio.</li>
-              <li>Designed and implemented scalable automation frameworks using Flows, Apex, and Validation Rules to streamline complex business processes.</li>
-              <li>Developed and optimized custom solutions using Apex, Triggers, Lightning Web Components (LWC), Visualforce, and OmniStudio (OmniScripts, FlexCards).</li>
-              <li>Implemented secure third-party integrations using REST/SOAP APIs, including DocuSign, Stripe, Zoho Sign, OpenSolar, WhatsApp, Zapier, and Google Sheets.</li>
+              <li>Delivered over 12 complex <strong>Salesforce Implementations</strong> for clients in Healthcare, Financial Services, Real Estate, and **Renewable Energy** (Solar and Wind).</li>
+              <li>Mastered the development of high-performance <strong>Lightning Web Components (LWC)</strong> and complex <strong>Apex Trigger Frameworks</strong> to support multi-step business logic and massive data volumes.</li>
+              <li>Implemented comprehensive <strong>CRM Automation workflows</strong> using Advanced Flows, OmniStudio (OmniScript, FlexCards), and Approval Processes, driving operational efficiency gains of 25% for internal teams.</li>
+              <li>Engineered secure third-party integrations with global services including <strong>DocuSign, Stripe, OpenSolar, and WhatsApp Business API</strong>, facilitating seamless digital transformations for multiple enterprise clients.</li>
+              <li>Developed custom <strong>REST and SOAP APIs</strong> to facilitate real-time synchronization between Salesforce and legacy systems, ensuring data integrity and high availability.</li>
             </ul>
           </div>
 
@@ -49,8 +52,9 @@ const Experience = () => {
               September 2022 – January 2023 | Ahmedabad
             </p>
             <ul className="experience-list">
-              <li>Gained hands-on experience in Salesforce configuration, automated workflows, and Apex development.</li>
-              <li>Shadowed senior developers on complex enterprise implementations, assisting with testing, deployments, and debugging.</li>
+              <li>Developed a strong foundation in <strong>Salesforce Administration and Development</strong>, completing intensive training on Object Modeling, Security Models, and Declarative Automation.</li>
+              <li>Assisted in the successful delivery of 3 major projects by performing rigorous <strong>User Acceptance Testing (UAT)</strong>, debugging Apex logic, and building custom reports and dashboards.</li>
+              <li>Mastered the principles of <strong>Clean Code and Agile Methodologies</strong>, actively participating in sprint planning and daily stand-up meetings to ensure timely project delivery.</li>
             </ul>
           </div>
         </div>

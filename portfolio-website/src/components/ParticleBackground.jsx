@@ -46,8 +46,8 @@ const ParticleBackground = () => {
         y:        Math.random() * window.innerHeight,
         vx:       Math.cos(angle) * spd,
         vy:       Math.sin(angle) * spd,
-        baseSize: Math.random() * 1.8 + 0.7,
-        opacity:  Math.random() * 0.50 + 0.18,
+        baseSize: Math.random() * 1.2 + 0.6,
+        opacity:  Math.random() * 0.35 + 0.30,
         color:    Math.random() > 0.5 ? '0, 212, 255' : '100, 255, 218',
       };
     };

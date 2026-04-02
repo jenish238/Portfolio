@@ -24,8 +24,8 @@ const TECH_META = {
   'Process Builder':      { icon: <MdAutoGraph />,           color: '#64ffda' },
   'Flows':                { icon: <FaBolt />,                color: '#64ffda' },
   'Sales Cloud':          { icon: <SiSalesforce />,          color: '#00a1e0' },
-  'WhatsApp Integration': { icon: <SiWhatsapp />,            color: '#25d366' },
   'Apex Triggers':        { icon: <FaCode />,                color: '#00d4ff' },
+  'WhatsApp Integration': { icon: <SiWhatsapp />,            color: '#25d366' },
   'Apex':                 { icon: <FaCode />,                color: '#00d4ff' },
   'Apex Batch':           { icon: <FaCode />,                color: '#00d4ff' },
   'Validation Rules':     { icon: <MdSecurity />,            color: '#f59e0b' },
@@ -115,7 +115,7 @@ const Projects = () => {
     {
       title: 'Integrated Property Management',
       desc: 'Centralized real estate lead intake with duplicate detection and automated 2-way WhatsApp communication.',
-      tech: ['Sales Cloud', 'WhatsApp Integration', 'Apex Triggers'],
+      tech: ['Sales Cloud', 'Apex Triggers', 'WhatsApp Integration'],
       industry: 'Real Estate',
     },
     {

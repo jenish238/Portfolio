@@ -12,17 +12,17 @@
   <link rel="canonical" href="https://jenishgangani.me" />
 
   <!-- ===== Primary SEO Meta Tags ===== -->
-  <title>Jenish Gangani | Senior Salesforce Developer & 7× Certified Architect</title>
-  <meta name="title" content="Jenish Gangani | Senior Salesforce Developer & 7× Certified Architect" />
+  <title>Jenish Gangani | Senior Salesforce Developer & Architect</title>
+  <meta name="title" content="Jenish Gangani | Senior Salesforce Developer & Architect" />
   <meta name="description"
-    content="Jenish Gangani is a Senior Salesforce Developer & 7× Certified Architect based in Ahmedabad, India. Expert in Apex, LWC, OmniStudio, Agentforce, Gemini AI integrations, and scalable CRM automation across Healthcare, Real Estate, Finance & more." />
+    content="Senior Salesforce Developer & 7× Certified Architect specializing in Apex, LWC, OmniStudio, and Gemini AI integrations." />
   <meta name="keywords"
     content="Jenish Gangani, Salesforce Developer, Senior Salesforce Developer, LWC Developer, Apex Developer, OmniStudio, Agentforce, Salesforce Certified, Platform Developer II, Data Cloud Consultant, JavaScript Developer Salesforce, AI Integration Salesforce, Gemini AI, Salesforce Architect, CRM Developer, Salesforce Freelancer, Salesforce India, Ahmedabad Salesforce, DocuSign Salesforce, WhatsApp Salesforce Integration, MV Clouds" />
   <meta name="author" content="Jenish Gangani" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- Language & Geo -->
-  <meta name="language" content="English" />
+  <meta name="language" content="en" />
   <meta name="geo.region" content="IN-GJ" />
   <meta name="geo.placename" content="Ahmedabad, Gujarat, India" />
   <meta name="geo.position" content="23.0225;72.5714" />
@@ -161,10 +161,23 @@
     ]
   }
   </script>
+
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Non-JS Fallback for SEO -->
+    <h1 style="display:none">Jenish Gangani | Senior Salesforce Developer & Architect</h1>
+    <p style="display:none">7× Certified Salesforce Developer specializing in Apex, LWC, OmniStudio, Agentforce, and AI integrations.</p>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

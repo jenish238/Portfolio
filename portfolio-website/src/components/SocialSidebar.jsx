@@ -15,13 +15,42 @@ const SocialSidebar = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    const observerOptions = { threshold: 0.1 };
+    let homeVisible = true;
+    let footerVisible = false;
+
+    const handleIntersect = () => {
+      // Visible only if NOT on home and NOT in footer
+      setVisible(!homeVisible && !footerVisible);
+    };
+
+    const homeObserver = new IntersectionObserver(([entry]) => {
+      homeVisible = entry.isIntersecting;
+      handleIntersect();
+    }, observerOptions);
+
+    const footerObserver = new IntersectionObserver(([entry]) => {
+      footerVisible = entry.isIntersecting;
+      handleIntersect();
+    }, observerOptions);
+
+    const homeEl = document.getElementById('home');
+    const footerEl = document.getElementById('footer');
+
+    if (homeEl) homeObserver.observe(homeEl);
+    if (footerEl) footerObserver.observe(footerEl);
+
+    // Initial check since Home is usually visible on load
+    handleIntersect();
+
+    return () => {
+      if (homeEl) homeObserver.unobserve(homeEl);
+      if (footerEl) footerObserver.unobserve(footerEl);
+    };
   }, []);
 
   return (
-    <div style={{
+    <div className="social-sidebar-container" style={{
       position: 'fixed',
       left: '24px',
       bottom: 0,
@@ -40,7 +69,7 @@ const SocialSidebar = () => {
           key={label}
           href={href}
           target="_blank"
-          rel="noreferrer"
+          rel="me noreferrer"
           aria-label={label}
           title={label}
           style={{
@@ -65,11 +94,11 @@ const SocialSidebar = () => {
           {icon}
         </a>
       ))}
-      {/* Vertical line */}
+      {/* Vertical line with reversed gradient */}
       <div style={{
         width: '1px',
         height: '80px',
-        background: 'linear-gradient(to bottom, var(--text-sub), transparent)',
+        background: 'linear-gradient(to top, transparent, var(--text-sub))',
         marginTop: '4px',
       }} />
     </div>

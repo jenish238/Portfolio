@@ -6,9 +6,9 @@
 
   /* Semi-transparent backgrounds (88% opaque) so the global particle canvas
      at z-index:0 remains subtly visible through every section */
-  --bg-dark: rgba(10, 25, 47, 0.88);
-  --bg-light: rgba(17, 34, 64, 0.88);
-  --bg-navy: rgba(2, 12, 27, 0.88);
+  --bg-dark: rgba(10, 25, 47, 0.45);
+  --bg-light: rgba(17, 34, 64, 0.45);
+  --bg-navy: rgba(2, 12, 27, 0.45);
 
   --primary: #00d4ff;
   --secondary: #0074D9;
@@ -55,6 +55,13 @@ a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
+}
+
+section,
+header,
+footer {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-link {
@@ -597,6 +604,13 @@ ul {
   margin-bottom: 30px;
 }
 
+.about-stats-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  flex: 1 1 300px;
+}
+
 .section-title {
   font-size: 3rem;
   margin-bottom: 50px;
@@ -618,8 +632,9 @@ ul {
 
 html,
 body {
-  overflow-x: hidden;
-  width: 100%;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  position: relative;
 }
 
 .timeline-container {
@@ -691,13 +706,14 @@ body {
     top: 70px;
     left: 0;
     width: 100%;
-    background: var(--bg-navy);
+    background: rgba(2, 12, 27, 0.98);
+    /* Less transparent for readability */
     padding: 30px;
     border-bottom: 2px solid var(--primary);
     gap: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
   }
 
   .nav-links-list.active {
@@ -760,11 +776,13 @@ body {
 
   .contact-wrapper,
   .education-card,
-  .achievements-btns {
+  .achievements-btns,
+  .about-stats-wrapper {
     flex-direction: column !important;
     text-align: center !important;
     justify-content: center !important;
     align-items: center !important;
+    padding-top: 0 !important;
   }
 
   .achievements-btns {
@@ -830,6 +848,19 @@ body {
 
   .contact-card div {
     text-align: center !important;
+  }
+
+  /* Hide fixed sidebar on mobile to prevent content overlap */
+  .social-sidebar-container {
+    display: none !important;
+  }
+
+  /* Ensure all sections are constrained */
+  section,
+  header,
+  footer {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
   }
 }
 

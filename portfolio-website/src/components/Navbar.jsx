@@ -56,7 +56,13 @@ const Navbar = () => {
         boxShadow: '0 0 8px var(--primary)',
       }} />
 
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="container" style={{ 
+        display: 'flex', 
+        justifyContent: activeSection === 'about' ? 'space-between' : 'flex-start', 
+        alignItems: 'center', 
+        gap: '50px',
+        transition: 'all 0.5s ease-in-out'
+      }}>
         <a href="#home" className="logo" onClick={closeMenu} aria-label="Home page" style={{
           fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)', textDecoration: 'none', transition: 'var(--transition)'
         }}>
