@@ -8,4 +8,4 @@ Sitemap: https://jenishgangani.me/sitemap.xml
 Disallow: /src/
 Disallow: /.vite/
 Disallow: /node_modules/
-git 
+# end of robots.txt
