@@ -884,6 +884,7 @@ body {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
 }
 

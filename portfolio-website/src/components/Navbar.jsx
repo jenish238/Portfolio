@@ -58,7 +58,7 @@ const Navbar = () => {
 
       <div className="container" style={{ 
         display: 'flex', 
-        justifyContent: activeSection === 'about' ? 'space-between' : 'flex-start', 
+        justifyContent: 'flex-start', 
         alignItems: 'center', 
         gap: '50px',
         transition: 'all 0.5s ease-in-out'
