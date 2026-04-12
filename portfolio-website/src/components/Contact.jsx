@@ -14,7 +14,7 @@ const Contact = () => {
     const form = e.target;
     const formData = new FormData(form);
     try {
-      const response = await fetch('https://formsubmit.co/ajax/jenishgangani238@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/hello@jenishgangani.me', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: formData
@@ -68,10 +68,15 @@ const Contact = () => {
           <p className="fade-in stagger-2" style={{ color: 'var(--text-sub)', maxWidth: '560px', margin: '0 auto', fontSize: '1rem', lineHeight: '1.7' }}>
             I'm always open to discussing Salesforce projects, AI integrations, or partnership opportunities.
           </p>
-          {/* Availability badge */}
-          <div style={{ marginTop: '20px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}>
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34d399', boxShadow: '0 0 8px #34d399', animation: 'pulse 2s infinite', display: 'inline-block' }} />
-            <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.85rem' }}>Available for Freelance & Full-Time Opportunities</span>
+          <div style={{ marginTop: '20px', display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}>
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34d399', boxShadow: '0 0 8px #34d399', animation: 'pulse 2s infinite', display: 'inline-block' }} />
+              <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.85rem' }}>Available for Projects</span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(111,218,68,0.1)', border: '1px solid rgba(111,218,68,0.3)' }}>
+              <SiUpwork style={{ color: '#6fda44', fontSize: '1rem' }} />
+              <span style={{ color: '#6fda44', fontWeight: '700', fontSize: '0.85rem' }}>Top Rated · 100% Job Success</span>
+            </div>
           </div>
         </div>
 
@@ -118,7 +123,7 @@ const Contact = () => {
           <div className="fade-in stagger-3" style={{ flex: '1 1 320px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {[
               { icon: <FaMapMarkerAlt />, title: 'Location', text: 'Ahmedabad, Gujarat, India', href: 'https://www.google.com/maps/place/Ahmedabad,+Gujarat' },
-              { icon: <FaEnvelopeOpen />, title: 'Email', text: 'jenishgangani238@gmail.com', href: 'mailto:jenishgangani238@gmail.com' },
+              { icon: <FaEnvelopeOpen />, title: 'Email', text: 'hello@jenishgangani.me', href: 'mailto:hello@jenishgangani.me' },
               { icon: <FaPhoneAlt />, title: 'Phone', text: '+91 9081131732', href: 'tel:+919081131732' },
             ].map(({ icon, title, text, href }) => (
               <a key={title} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noreferrer"

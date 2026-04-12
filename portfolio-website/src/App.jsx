@@ -13,8 +13,7 @@ import Achievements from './components/Achievements';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ParticleBackground from './components/ParticleBackground';
-import SocialSidebar from './components/SocialSidebar';
-import BackToTop from './components/BackToTop';
+import Testimonials from './components/Testimonials';
 
 /* ── Animated counter hook ─────────────────────────────────── */
 const useCounter = (target, duration = 1800) => {
@@ -94,6 +93,13 @@ function App() {
       <BackToTop />
       <Hero />
 
+      <Projects />
+      <Experience />
+      <Skills />
+      <Testimonials />
+      <Integrations />
+      <Certifications />
+      
       {/* ── About Section ──────────────────────────────────────── */}
       <section id="about" style={{ padding: '140px 0', position: 'relative' }}>
         <div className="container" style={{ maxWidth: '1100px' }}>
@@ -199,13 +205,8 @@ function App() {
         </div>
       </section>
 
-      <Experience />
-      <Skills />
-      <Integrations />
-      <Certifications />
       <Education />
       <Achievements />
-      <Projects />
       <Contact />
 
       <footer id="footer" style={{ padding: '60px 0 40px', textAlign: 'center', background: 'var(--bg-dark)' }}>
@@ -215,7 +216,7 @@ function App() {
             { href: 'https://www.upwork.com/freelancers/~0151237481fe1a38f2?mp_source=share', icon: <SiUpwork />, label: 'Upwork' },
             { href: 'https://www.salesforce.com/trailblazer/jgangani1', icon: <FaSalesforce />, label: 'Trailhead' },
             { href: 'https://github.com/jenish238', icon: <FaGithub />, label: 'GitHub' },
-            { href: 'mailto:jenishgangani238@gmail.com', icon: <FaEnvelope />, label: 'Email' },
+            { href: 'mailto:hello@jenishgangani.me', icon: <FaEnvelope />, label: 'Email' },
             { href: 'https://wa.me/919081131732', icon: <FaWhatsapp />, label: 'WhatsApp' },
           ].map(({ href, icon, label }) => (
             <a key={label} href={href} target={href.startsWith('mailto') ? undefined : '_blank'} rel={href.startsWith('mailto') ? 'noreferrer' : 'me noreferrer'}

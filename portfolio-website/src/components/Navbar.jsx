@@ -78,9 +78,9 @@ const Navbar = () => {
 
         <ul className={`nav-links-list ${isOpen ? 'active' : ''}`}>
           {[
-            ['home', 'Home'], ['about', 'About'], ['experience', 'Experience'],
-            ['skills', 'Skills'], ['certifications', 'Certifications'],
-            ['education', 'Education'], ['achievements', 'Achievements'], ['projects', 'Projects']
+            ['home', 'Home'], ['projects', 'Projects'], ['experience', 'Experience'],
+            ['skills', 'Skills'], ['testimonials', 'Results'], ['certifications', 'Expertise'],
+            ['about', 'About']
           ].map(([id, label]) => (
             <li key={id}>
               <a
@@ -92,7 +92,13 @@ const Navbar = () => {
               >{label}</a>
             </li>
           ))}
-          <li><a href="#contact" className="btn btn-primary" onClick={closeMenu} style={{ padding: '8px 20px' }}>Contact</a></li>
+          <li><a href="#contact" className="btn btn-primary" onClick={closeMenu} style={{ 
+            padding: '8px 20px', 
+            background: 'var(--primary)', 
+            color: 'var(--bg-navy)',
+            border: 'none',
+            fontWeight: '700'
+          }}>Book a Call</a></li>
         </ul>
       </div>
     </nav>

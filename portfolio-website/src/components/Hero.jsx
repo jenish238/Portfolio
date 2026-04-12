@@ -4,7 +4,7 @@ import { SiUpwork } from 'react-icons/si';
 
 const ROLES = [
   'Senior Salesforce Developer.',
-  '7× Salesforce Certified Expert',
+  '6× Salesforce Certified Expert',
   'LWC & Apex Expert.',
   'AI Integration Specialist.',
   'Finalist at Agentic AI Day (Hackathon)',
@@ -48,7 +48,11 @@ const Hero = () => {
       background: 'var(--bg-navy)',
     }}>
       <div className="container fade-in hero-content" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
-        <p style={{ color: 'var(--primary)', marginBottom: '20px', fontWeight: '400', fontSize: '1.2rem', margin: '0 0 20px 0' }}>Hi, I am</p>
+        <div style={{ marginBottom: '25px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}>
+          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34d399', boxShadow: '0 0 8px #34d399', animation: 'pulse 2s infinite', display: 'inline-block' }} />
+          <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.85rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Available for Projects</span>
+        </div>
+        <p style={{ color: 'var(--primary)', marginBottom: '10px', fontWeight: '400', fontSize: '1.2rem', margin: '0' }}>Hi, I am</p>
         <h1 className="hero-main-title">Jenish Gangani.</h1>
 
         {/* Typewriter role */}
@@ -65,16 +69,22 @@ const Hero = () => {
           }} />
         </h2>
 
-        <p className="hero-description">
-          Specializing in AI-powered solutions, OmniStudio, and high-performance LWC applications.
-          Expert in integrating Salesforce with external systems and building intelligent, user-centric workflows.
+        <p className="hero-description" style={{ color: 'var(--text-sub)', fontSize: '1.15rem', marginBottom: '40px' }}>
+          I help businesses deploy <strong>Agentforce</strong> and <strong>AI-powered workflows</strong> that actually scale. 
+          Bridging the gap between 7× certified expertise and real-world business outcomes.
         </p>
-        <div className="hero-btns-wrapper">
-          <a href="#projects" className="btn btn-primary">View My Work</a>
-          <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary">Book 30-Min Call</a>
-          <a href="/resume.pdf" download className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-            <FaDownload /> Download Resume
+        <div className="hero-btns-wrapper" style={{ marginBottom: '40px', gap: '20px' }}>
+          <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ 
+            background: 'var(--primary)', 
+            color: 'var(--bg-navy)', 
+            border: 'none',
+            fontSize: '1.1rem',
+            padding: '16px 32px',
+            boxShadow: '0 0 25px rgba(0, 212, 255, 0.4)'
+          }}>
+            Book a Free 30-Min Call
           </a>
+          <a href="#projects" className="btn btn-primary">View My Work</a>
         </div>
         <div style={{ display: 'flex', gap: '25px', justifyContent: 'center' }}>
           <a href="https://www.linkedin.com/in/jenish-gangani-577440215/" target="_blank" rel="me noreferrer" style={{ color: 'var(--white)', fontSize: '1.8rem', transition: 'var(--transition)' }} className="social-icon" title="LinkedIn" aria-label="LinkedIn"><FaLinkedinIn /></a>

@@ -84,7 +84,7 @@ const Certifications = () => (
       </h2>
       <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg,var(--primary),var(--secondary))', margin: '0 auto 14px', borderRadius: '99px' }} />
       <p className="fade-in stagger-2" style={{ color: 'var(--text-sub)', marginBottom: '50px', fontSize: '1rem' }}>
-        7× Salesforce Certified — click any card to verify on Trailhead
+        6× Salesforce Certified — click any card to verify on Trailhead
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', maxWidth: '1100px', margin: '0 auto' }}>
         {CERTS.map((c, i) => <CertCard key={i} cert={c} index={i} />)}
