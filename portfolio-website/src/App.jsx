@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaSalesforce, FaWhatsapp, FaEnvelope, FaBriefcase, FaCode, FaGlobe } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
@@ -86,6 +87,7 @@ function App() {
 
   return (
     <main className="App">
+      <Analytics />
       <ParticleBackground />
       <Navbar />
       <SocialSidebar />
