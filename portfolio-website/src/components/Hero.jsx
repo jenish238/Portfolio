@@ -47,35 +47,64 @@ const Hero = () => {
       justifyContent: 'center',
       position: 'relative',
       overflow: 'hidden',
-      background: 'var(--bg-navy)',
+      background: 'transparent',
     }}>
-      <div className="container fade-in hero-content" style={{ position: 'relative', zIndex: 2 }}>
-        <div style={{ marginBottom: '25px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}>
+      <div className="container fade-in hero-content" style={{ 
+        position: 'relative', 
+        zIndex: 2,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center'
+      }}>
+        <div style={{ 
+          marginBottom: '25px', 
+          display: 'inline-flex', 
+          alignItems: 'center', 
+          gap: '8px', 
+          padding: '8px 20px', 
+          borderRadius: '99px', 
+          background: 'rgba(52,211,153,0.1)', 
+          border: '1px solid rgba(52,211,153,0.3)',
+          width: 'fit-content'
+        }}>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34d399', boxShadow: '0 0 8px #34d399', animation: 'pulse 2s infinite', display: 'inline-block' }} />
           <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.85rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Available for Projects</span>
         </div>
-        <p style={{ color: 'var(--primary)', marginBottom: '10px', fontWeight: '400', fontSize: '1.2rem', margin: '0' }}>Hi, I am</p>
-        <h1 className="hero-main-title">Jenish Gangani.</h1>
+        <p style={{ color: 'var(--primary)', marginBottom: '10px', fontWeight: '400', fontSize: '1.2rem', width: '100%' }}>Hi, I am</p>
+        <h1 className="hero-main-title" style={{ width: '100%' }}>Jenish Gangani.</h1>
 
         {/* Typewriter role */}
-        <h2 className="hero-sub-title" style={{ minHeight: '3rem' }}>
-          {displayed}
-          <span style={{
-            display: 'inline-block',
-            width: '3px',
-            height: '1.1em',
-            background: 'var(--primary)',
-            marginLeft: '3px',
-            verticalAlign: 'middle',
-            animation: 'blink 1s step-end infinite',
-          }} />
-        </h2>
+        <div style={{ 
+          minHeight: '4.5rem', 
+          margin: '10px 0 30px',
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'center',
+          width: '100%'
+        }}>
+          <h2 className="hero-sub-title" style={{ 
+            margin: 0,
+            fontWeight: '600'
+          }}>
+            {displayed}
+            <span style={{
+              display: 'inline-block',
+              width: '3px',
+              height: '1.1em',
+              background: 'var(--primary)',
+              marginLeft: '3px',
+              verticalAlign: 'middle',
+              animation: 'blink 1s step-end infinite',
+            }} />
+          </h2>
+        </div>
 
-        <p className="hero-description" style={{ color: 'var(--text-sub)', fontSize: '1.15rem', marginBottom: '40px' }}>
+        <p className="hero-description" style={{ color: 'var(--text-sub)', fontSize: '1.15rem', marginBottom: '40px', maxWidth: '750px' }}>
           I help businesses deploy <strong>Agentforce</strong> and <strong>AI-powered workflows</strong> that actually scale. 
           Bridging the gap between 7× certified expertise and real-world business outcomes.
         </p>
-        <div className="hero-btns-wrapper" style={{ marginBottom: '40px', gap: '20px' }}>
+        <div className="hero-btns-wrapper" style={{ marginBottom: '40px', gap: '20px', display: 'flex', justifyContent: 'center', width: '100%' }}>
           <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ 
             fontSize: '1.1rem',
             padding: '16px 40px',
@@ -84,7 +113,12 @@ const Hero = () => {
           }}>
             Book a Free 30-Min Call
           </a>
-          <a href="#projects" className="btn btn-primary">View My Work</a>
+          <a href="#projects" className="btn btn-primary" style={{ 
+            fontSize: '1.1rem',
+            padding: '16px 40px',
+            borderRadius: '50px',
+            fontWeight: '700'
+          }}>View My Work</a>
         </div>
         <div style={{ display: 'flex', gap: '25px', justifyContent: 'center' }}>
           <a href="https://www.linkedin.com/in/jenish-gangani-577440215/" target="_blank" rel="me noreferrer" style={{ color: 'var(--white)', fontSize: '1.8rem', transition: 'var(--transition)' }} className="social-icon" title="LinkedIn" aria-label="LinkedIn"><FaLinkedinIn /></a>

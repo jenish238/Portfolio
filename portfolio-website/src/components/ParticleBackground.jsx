@@ -46,8 +46,8 @@ const ParticleBackground = () => {
         y:        Math.random() * window.innerHeight,
         vx:       Math.cos(angle) * spd,
         vy:       Math.sin(angle) * spd,
-        baseSize: Math.random() * 1.2 + 0.6,
-        opacity:  Math.random() * 0.35 + 0.30,
+        baseSize: Math.random() * 1.8 + 1.2,
+        opacity:  Math.random() * 0.45 + 0.45,
         color:    Math.random() > 0.5 ? '0, 212, 255' : '100, 255, 218',
       };
     };
@@ -148,11 +148,11 @@ const ParticleBackground = () => {
       ref={canvasRef}
       aria-hidden="true"
       style={{
-        position: 'absolute',
+        position: 'fixed',
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
+        width: '100vw',
+        height: '100vh',
         zIndex: 0,
         pointerEvents: 'none',
       }}

@@ -90,6 +90,7 @@ function App() {
     <main className="App">
       <Analytics />
       <Navbar />
+      <ParticleBackground />
       <SocialSidebar />
       <BackToTop />
       <Hero />
@@ -103,7 +104,6 @@ function App() {
       
       {/* ── About Section ──────────────────────────────────────── */}
       <section id="about" style={{ padding: '140px 0', position: 'relative', overflow: 'hidden' }}>
-        <ParticleBackground />
         <div className="container" style={{ maxWidth: '1100px' }}>
           <div className="section-header fade-in" style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: '3rem', color: 'var(--white)', marginBottom: '16px' }}>About Me</h2>
@@ -115,7 +115,7 @@ function App() {
             gap: '80px', 
             alignItems: 'center', 
             flexWrap: 'wrap',
-            background: 'rgba(17, 34, 64, 0.4)',
+            background: 'transparent',
             padding: '60px 50px',
             borderRadius: '24px',
             border: '1px solid rgba(0, 212, 255, 0.05)',
@@ -211,7 +211,7 @@ function App() {
       <Achievements />
       <Contact />
 
-      <footer id="footer" style={{ padding: '60px 0 40px', textAlign: 'center', background: 'var(--bg-dark)' }}>
+      <footer id="footer" style={{ padding: '60px 0 40px', textAlign: 'center' }}>
         <div style={{ display: 'flex', gap: '25px', justifyContent: 'center', marginBottom: '25px' }}>
           {[
             { href: 'https://www.linkedin.com/in/jenish-gangani-577440215/', icon: <FaLinkedinIn />, label: 'LinkedIn' },
