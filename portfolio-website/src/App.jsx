@@ -89,7 +89,6 @@ function App() {
   return (
     <main className="App">
       <Analytics />
-      <ParticleBackground />
       <Navbar />
       <SocialSidebar />
       <BackToTop />
@@ -103,7 +102,8 @@ function App() {
       <Certifications />
       
       {/* ── About Section ──────────────────────────────────────── */}
-      <section id="about" style={{ padding: '140px 0', position: 'relative' }}>
+      <section id="about" style={{ padding: '140px 0', position: 'relative', overflow: 'hidden' }}>
+        <ParticleBackground />
         <div className="container" style={{ maxWidth: '1100px' }}>
           <div className="section-header fade-in" style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: '3rem', color: 'var(--white)', marginBottom: '16px' }}>About Me</h2>
