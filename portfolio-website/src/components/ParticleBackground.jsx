@@ -46,8 +46,8 @@ const ParticleBackground = () => {
         y:        Math.random() * window.innerHeight,
         vx:       Math.cos(angle) * spd,
         vy:       Math.sin(angle) * spd,
-        baseSize: Math.random() * 1.8 + 1.2,
-        opacity:  Math.random() * 0.45 + 0.45,
+        baseSize: Math.random() * 1.5 + 0.8,
+        opacity:  Math.random() * 0.4 + 0.4,
         color:    Math.random() > 0.5 ? '0, 212, 255' : '100, 255, 218',
       };
     };
@@ -114,12 +114,12 @@ const ParticleBackground = () => {
         if (p.y < -12) p.y = canvas.height + 12;
         if (p.y > canvas.height + 12) p.y  = -12;
 
-        /* Glowing halo */
-        const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.baseSize * 6);
-        g.addColorStop(0, `rgba(${p.color}, ${p.opacity})`);
+        /* Glowing halo - tighter multiplier */
+        const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.baseSize * 3);
+        g.addColorStop(0, `rgba(${p.color}, ${p.opacity * 0.6})`);
         g.addColorStop(1, `rgba(${p.color}, 0)`);
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.baseSize * 6, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, p.baseSize * 3, 0, Math.PI * 2);
         ctx.fillStyle = g;
         ctx.fill();
 
