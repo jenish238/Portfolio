@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaSalesforce, FaWhatsapp, FaEnvelope, FaBriefcase, FaCode, FaGlobe } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
-import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
@@ -14,6 +13,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ParticleBackground from './components/ParticleBackground';
 import Testimonials from './components/Testimonials';
+import SocialSidebar from './components/SocialSidebar';
+import BackToTop from './components/BackToTop';
 
 /* ── Animated counter hook ─────────────────────────────────── */
 const useCounter = (target, duration = 1800) => {
@@ -86,7 +87,6 @@ function App() {
 
   return (
     <main className="App">
-      <Analytics />
       <ParticleBackground />
       <Navbar />
       <SocialSidebar />
@@ -146,7 +146,7 @@ function App() {
                   next-generation workflows that are not just automated, but truly intelligent.
                 </p>
                 <p>
-                  As a <strong>7× Certified Salesforce Expert</strong>, I bridge the gap between business vision and 
+                  As a <strong>6× Certified Salesforce Expert</strong>, I bridge the gap between business vision and 
                   technical execution, ensuring that every line of code adds measurable value.
                 </p>
               </div>
@@ -174,7 +174,7 @@ function App() {
                   icon={<FaCode />}
                 />
                 <StatCard 
-                  value={7} 
+                  value={6} 
                   suffix="+" 
                   label="Certified" 
                   color="var(--primary)" 
