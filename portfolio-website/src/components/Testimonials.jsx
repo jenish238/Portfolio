@@ -73,10 +73,10 @@ const Testimonials = () => {
                   <h4 style={{ color: 'var(--white)', fontSize: '0.95rem', fontWeight: '700', marginBottom: '2px' }}>{t.author}</h4>
                   <p style={{ color: 'var(--text-sub)', fontSize: '0.8rem' }}>{t.company}</p>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '6px 12px', borderRadius: '99px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>
+                {/* <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '6px 12px', borderRadius: '99px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>
                   <span style={{ color: t.color, fontSize: '0.9rem', display: 'flex' }}>{t.sourceIcon}</span>
                   <span style={{ fontSize: '0.7rem', color: 'var(--text-sub)', fontWeight: '600', textTransform: 'uppercase' }}>{t.sourceLabel}</span>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
