@@ -30,8 +30,10 @@ const Hero = () => {
       if (i > 0) {
         timeout = setTimeout(() => setDisplayed(target.slice(0, i - 1)), 35);
       } else {
-        setRoleIndex((prev) => (prev + 1) % ROLES.length);
-        setTyping(true);
+        timeout = setTimeout(() => {
+          setRoleIndex((prev) => (prev + 1) % ROLES.length);
+          setTyping(true);
+        }, 500);
       }
     }
     return () => clearTimeout(timeout);
@@ -47,7 +49,7 @@ const Hero = () => {
       overflow: 'hidden',
       background: 'var(--bg-navy)',
     }}>
-      <div className="container fade-in hero-content" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
+      <div className="container fade-in hero-content" style={{ position: 'relative', zIndex: 2 }}>
         <div style={{ marginBottom: '25px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 20px', borderRadius: '99px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34d399', boxShadow: '0 0 8px #34d399', animation: 'pulse 2s infinite', display: 'inline-block' }} />
           <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.85rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Available for Projects</span>
@@ -75,12 +77,10 @@ const Hero = () => {
         </p>
         <div className="hero-btns-wrapper" style={{ marginBottom: '40px', gap: '20px' }}>
           <a href="https://calendly.com/jenishgangani239/30min" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ 
-            background: 'var(--primary)', 
-            color: 'var(--bg-navy)', 
-            border: 'none',
             fontSize: '1.1rem',
-            padding: '16px 32px',
-            boxShadow: '0 0 25px rgba(0, 212, 255, 0.4)'
+            padding: '16px 40px',
+            borderRadius: '50px',
+            fontWeight: '700'
           }}>
             Book a Free 30-Min Call
           </a>

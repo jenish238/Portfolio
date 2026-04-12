@@ -10,8 +10,10 @@
   --bg-light: rgba(17, 34, 64, 0.45);
   --bg-navy: rgba(2, 12, 27, 0.45);
 
-  --primary: #00d4ff;
-  --secondary: #0074D9;
+  --primary: #007cf0;
+  --primary-light: #00dfd8;
+  --primary-gradient: linear-gradient(135deg, #0061ff 0%, #60efff 100%);
+  --secondary: #0055ff;
   --accent: #64ffda;
   --text-main: #ccd6f6;
   --text-sub: #8892b0;
@@ -367,14 +369,17 @@ ul {
 }
 
 .btn-primary {
-  background: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  background: var(--primary-gradient);
+  border: none;
+  color: #ffffff !important; /* White text for better premium contrast on deep blue */
+  box-shadow: 0 4px 15px rgba(0, 97, 255, 0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .btn-primary:hover {
-  background: rgba(0, 212, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 124, 240, 0.5);
+  filter: brightness(1.1);
 }
 
 /* Custom Scrollbar */

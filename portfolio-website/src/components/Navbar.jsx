@@ -58,9 +58,8 @@ const Navbar = () => {
 
       <div className="container" style={{ 
         display: 'flex', 
-        justifyContent: 'flex-start', 
+        justifyContent: 'space-between', 
         alignItems: 'center', 
-        gap: '50px',
         transition: 'all 0.5s ease-in-out'
       }}>
         <a href="#home" className="logo" onClick={closeMenu} aria-label="Home page" style={{
@@ -93,11 +92,9 @@ const Navbar = () => {
             </li>
           ))}
           <li><a href="#contact" className="btn btn-primary" onClick={closeMenu} style={{ 
-            padding: '8px 20px', 
-            background: 'var(--primary)', 
-            color: 'var(--bg-navy)',
-            border: 'none',
-            fontWeight: '700'
+            padding: '8px 24px', 
+            fontWeight: '700',
+            borderRadius: '50px'
           }}>Book a Call</a></li>
         </ul>
       </div>
