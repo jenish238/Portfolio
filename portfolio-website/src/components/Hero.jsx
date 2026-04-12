@@ -4,7 +4,7 @@ import { SiUpwork } from 'react-icons/si';
 
 const ROLES = [
   'Senior Salesforce Developer.',
-  '6× Salesforce Certified Expert',
+  '7× Salesforce Certified Expert',
   'LWC & Apex Expert.',
   'AI Integration Specialist.',
   'Finalist at Agentic AI Day (Hackathon)',
