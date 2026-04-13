@@ -1,0 +1,47 @@
+# Vercel Speed Insights Installation Report
+
+## Summary
+Successfully installed and configured Vercel Speed Insights for this React + Vite portfolio project.
+
+## Implementation Details
+
+### 1. Documentation Fetched
+- Retrieved latest installation instructions from: https://vercel.com/docs/speed-insights/quickstart
+- Confirmed framework-specific instructions for React/Vite projects
+
+### 2. Package Installation
+- Installed `@vercel/speed-insights` version 2.0.0 using npm
+- Package added to dependencies in package.json
+- Lock file (package-lock.json) updated with new dependencies
+
+### 3. Code Changes
+
+**Modified Files:**
+- `src/App.jsx` - Added Speed Insights integration
+
+**Changes Made:**
+1. Added import statement: `import { SpeedInsights } from '@vercel/speed-insights/react';`
+2. Added `<SpeedInsights />` component in the App return statement, positioned alongside the existing `<Analytics />` component
+
+### 4. Testing & Verification
+✅ Lint check passed - No ESLint errors
+✅ Build successful - Project compiles without errors
+✅ Bundle size: 311.05 kB (gzipped: 98.42 kB)
+
+## Next Steps for Deployment
+Once deployed to Vercel:
+1. Enable Speed Insights in the Vercel Dashboard (Project Settings → Speed Insights)
+2. Deploy the changes using `vercel deploy`
+3. Verify installation by checking for `/<unique-path>/script.js` in the page's head tag
+4. Monitor performance metrics in the Speed Insights dashboard
+
+## Files Updated
+- package.json - Added @vercel/speed-insights dependency
+- package-lock.json - Updated with new package dependencies
+- src/App.jsx - Integrated SpeedInsights component
+
+## Notes
+- Speed Insights component follows the same pattern as the existing Analytics component
+- Positioned at the root level to track all pages
+- Implementation follows official Vercel documentation for React projects
+- Data collection will begin automatically upon deployment to Vercel
