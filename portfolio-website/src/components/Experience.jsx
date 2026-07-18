@@ -31,7 +31,7 @@ const Experience = () => {
               Salesforce Developer <span style={{ color: 'var(--primary)' }}>@ MV Clouds Pvt. Ltd.</span>
             </h3>
             <p className="experience-date">
-              February 2023 – February 2025 | Ahmedabad
+              February 2022 – February 2025 | Ahmedabad
             </p>
             <ul className="experience-list">
               <li>Delivered over 12 complex <strong>Salesforce Implementations</strong> for clients in Healthcare, Financial Services, Real Estate, and **Renewable Energy** (Solar and Wind).</li>
@@ -49,7 +49,7 @@ const Experience = () => {
               Salesforce Trainee <span style={{ color: 'var(--primary)' }}>@ MV Clouds Pvt. Ltd.</span>
             </h3>
             <p className="experience-date">
-              September 2022 – January 2023 | Ahmedabad
+              September 2021 – January 2022 | Ahmedabad
             </p>
             <ul className="experience-list">
               <li>Developed a strong foundation in <strong>Salesforce Administration and Development</strong>, completing intensive training on Object Modeling, Security Models, and Declarative Automation.</li>
