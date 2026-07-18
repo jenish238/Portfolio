@@ -233,7 +233,7 @@ function App() {
               >
                 <p style={{ marginBottom: "25px" }}>
                   I am a results-driven{" "}
-                  <strong>Senior Salesforce Developer</strong> with over 4 years
+                  <strong>Senior Salesforce Developer</strong> with over 5+ years
                   of professional experience delivering high-impact, scalable
                   CRM solutions. My expertise lies in the architecture and
                   development of complex enterprise systems across major
@@ -268,7 +268,7 @@ function App() {
                 }}
               >
                 <StatCard
-                  value={4}
+                  value={5}
                   suffix="+"
                   label="Years Exp."
                   color="var(--primary)"
